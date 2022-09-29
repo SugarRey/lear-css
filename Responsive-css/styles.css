@@ -155,4 +155,7 @@ main {
 }
 .currency-table--container {
     width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    
 }
