@@ -153,3 +153,6 @@ main {
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
+.currency-table--container {
+    width: 90%;
+}
