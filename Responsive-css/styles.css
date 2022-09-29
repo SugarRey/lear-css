@@ -94,3 +94,13 @@ header img {
     margin-left: 10px;
     background-image: url("./assets/assets/icons/down-arrow.svg")
 }
+
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container-container {
+    width: 100%;
+}
