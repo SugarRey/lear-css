@@ -9,7 +9,7 @@
     /* colores */
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
-    --sEcondary-blue: #1A9AF7;
+    --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
     --warm-black: #282623;
     --black: #201e1c;
@@ -107,6 +107,7 @@ main {
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    overflow-x: hidden;
 }
 .main-exchange-container--title{
     width: 90%;
@@ -127,7 +128,7 @@ main {
 .main-exchange-container h2 {
     margin-bottom: 30px;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 2.6rem;
     color: var(--black);
 }
@@ -138,39 +139,55 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+
+.main-tables-container{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.main-tables-container::-webkit-scrollbar{
+    display: none;
+}
 .main-currency-table {
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
+    width: auto;
+    min-width: 380px;
+    max-width: 700px;
     height: 360px;
     margin: 0 auto;
     font-family: "inter", sans-serif;
 }
 .main-currency-table .currency-table--title {
+    width: 70%;
+    margin: 0 auto;
     margin-bottom: 15px;
     font-size: 1rem;
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
+    text-align: left;
+    padding-left: 20px;
 }
 .currency-table--container {
-    width: 90%;
+    width: 100%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
+    height: 180px;
     margin: 0 auto;
+    position: relative;
 }
 .currency-table--container table{
     width: 100%;
     height: 100%;
 }
-.currency-table--container td {
+.currency-table--container table tr td {
     width: 50%;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.2rem;
     color: var(--grey);
     background-color: var(--just-white);
+    text-align: left;
+    padding-left: 15px;
 }
 .currency-table--container .table__top-left {
     border-radius: 15px 0 0 0;
@@ -189,6 +206,7 @@ main {
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
+    text-align: center;
 }
 .currency-table--container .dow{
     display: inline-block;
@@ -224,4 +242,22 @@ main {
     line-height: 1.5rem;
     color: var(--warm-black);
     font-weight: 300;
+}
+.main-comision-table .comision-table--title {
+    color: var(--secondary-blue);
+}
+.comision-table--date {
+    background: var(--soft-blue);
+}
+
+.table-go-right {
+    position: absolute;
+    right: -40px;
+    padding: 20px;
+    top: calc(50% - 30px);
+    
+}
+.table-go-left {
+    right: auto;
+    left: -40px;
 }

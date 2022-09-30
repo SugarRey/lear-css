@@ -31,7 +31,7 @@
                 <p>Traemos informacion en tiempo real de las casas de cambio y las monedas mas importantes</p>
             </div>
             <section class="main-tables-container">
-                <div class="main-currency-table"> <!-- contedor general de la tabla que se estiliza -->
+                <div class="main-currency-table" id="slider-table-primario"> <!-- contedor general de la tabla que se estiliza -->
                     <p class="currency-table--title">Monedas</p>
                     <div class="currency-table--container">
                         <table>
@@ -53,8 +53,41 @@
                                 <td class="table__bottom-right table__right">$ 4.96<span class="dow"></span></td>
                             </tr>
                         </table>
+                        <a href="#slider-table-secundario" class="table-go-right">
+                            <img src="./assets/assets/icons/arrow-dopleft.svg" alt="">
+                        </a>
                     </div>
                     <div class="currency-table--date">
+                        <p><b> Actualizado:</b> 19 de julio 23:40</p>
+                    </div>
+                </div>
+                <div class="main-currency-table main-comision-table" id="slider-table-secundario"> <!-- contedor general de la tabla que se estiliza -->
+                    <p class="currency-table--title comision-table--title">Comisiones</p>
+                    <div class="currency-table--container">
+                        <table>
+                            <tr>
+                                <td class="table__top-left">Bitrade</td>
+                                <td class="table__top-right table__right">$ 12.96 <span class="dow"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Bitpreco</td>
+                                <td class="table__right">$ 13.07<span class="up"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Novadex</td>
+                                <td class="table__right">$ 14.15<span class="dow"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table__bottom-left">Coinext</td>
+                                <td class="table__bottom-right table__right">$ 14.96<span class="dow"></span></td>
+                            </tr>
+                        </table>
+                        <a href="#slider-table-primario" class="table-go-right table-go-left">
+                            <img src="./assets/assets/icons/arrow-dopright.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="currency-table--date comision-table--date">
                         <p><b> Actualizado:</b> 19 de julio 23:40</p>
                     </div>
                 </div>
