@@ -303,19 +303,39 @@ main {
     width: 100%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    height: auto;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-detail--card .clock {
+.product-detail--card .product-icon{
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
+}
+.product-detail--card .clock {
     background-image: url("./assets/assets/icons/clock.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-detail--card .eyes {
+    background-image: url("./assets/assets/icons/eye.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-detail--card .dollar {
+    background-image: url("./assets/assets/icons/dollar-sign.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-detail--card .infgit  {
+    background-image: url("./assets/assets/icons/check-circle.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
