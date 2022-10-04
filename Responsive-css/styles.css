@@ -419,3 +419,10 @@ main {
     font-size: 1rem;  
     padding: 6px;
 }
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: black;
+}
