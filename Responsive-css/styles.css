@@ -426,3 +426,17 @@ main {
     line-height: 1.6rem;
     color: black;
 }
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 6rem;
+    color: black;
+}
+.plan-card--price span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.plan-card--saving {
+    color: #757575;
+} 
