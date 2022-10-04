@@ -430,12 +430,13 @@ main {
     padding: 5px 0;
     font-size: 5rem;
     font-weight: bold;
-    line-height: 6rem;
+    line-height: 5rem;
     color: black;
 }
 .plan-card--price span {
     font-size: 1rem;
     font-weight: 300;
+    vertical-align: text-top;
 }
 .plan-card--saving {
     color: #757575;
